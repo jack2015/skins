@@ -821,14 +821,17 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <widget source="global.CurrentTime" render="Label" position="1650,236" size="210,40" font="Regular;34" halign="center" foregroundColor="button" backgroundColor="black" transparent="1">
 <convert type="ClockToText">Format:%d.%m.%Y</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="990,256" size="600,30" halign="right" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
+<widget source="session.CurrentService" render="Label" position="1000,256" size="600,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="PliExtraInfo">TransponderInfo</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1190,228" size="200,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
+<widget source="session.CurrentService" render="Label" position="1000,228" size="185,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="PliExtraInfo">ResolutionString</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1380,228" size="200,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
+<widget source="session.CurrentService" render="Label" position="1185,228" size="185,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="PliExtraInfo">VideoCodec</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="1370,228" size="250,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
+<convert type="OpenEcmInfo">bitrate</convert>
 </widget>
 <widget source="session.CurrentService" render="Label" position="400,228" size="690,90" halign="center" font="Regular;24" zPosition="4" transparent="1" backgroundColor="black">
 <convert type="CryptoInfo">VerboseInfo</convert>
