@@ -823,23 +823,29 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <convert type="ValueRange">18,18</convert>
 <convert type="ConditionalShowHide"/>
 </widget>
-<widget source="global.CurrentTime" render="Label" position="1660,228" size="210,30" font="Regular;26" halign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1">
+<widget source="global.CurrentTime" render="Label" position="1660,220" size="210,32" font="Regular;30" halign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Format:%d.%m.%Y</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1655,256" size="205,30" font="Regular;24" foregroundColor="button" backgroundColor="bgmain" halign="left" transparent="1">
+<widget source="session.CurrentService" render="Label" position="1600,256" size="290,30" font="Regular;24" foregroundColor="button" backgroundColor="bgmain" halign="center" transparent="1">
+<convert type="OpenEcmInfo">bitrate</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="1600,256" size="145,30" font="Regular;24" foregroundColor="button" backgroundColor="bgmain" halign="left" transparent="1">
 <convert type="VNetSpeedInfo">RC</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1655,256" size="205,30" font="Regular;24" foregroundColor="button" backgroundColor="bgmain" halign="right" transparent="1">
+<widget source="session.CurrentService" render="Label" position="1750,256" size="145,30" font="Regular;24" foregroundColor="button" backgroundColor="bgmain" halign="left" transparent="1">
 <convert type="VNetSpeedInfo">TM</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1010,256" size="600,30" halign="right" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
+<widget source="session.CurrentService" render="Label" position="1000,256" size="600,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
 <convert type="PliExtraInfo">TransponderInfo</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1160,228" size="200,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
+<widget source="session.CurrentService" render="Label" position="1000,228" size="175,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
 <convert type="PliExtraInfo">ResolutionString</convert>
 </widget>
-<widget source="session.CurrentService" render="Label" position="1350,228" size="200,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
+<widget source="session.CurrentService" render="Label" position="1175,228" size="185,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
 <convert type="PliExtraInfo">VideoCodec</convert>
+</widget>
+<widget source="session.CurrentService" render="Label" position="1360,228" size="300,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
+<convert type="VtiTempFan">AllInfo</convert>
 </widget>
 <widget source="session.CurrentService" render="Label" position="75,228" size="435,30" halign="center" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
 <convert type="PliExtraInfo">CryptoSpecial</convert>
