@@ -84,8 +84,8 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <parameter name="ChoicelistIcon" value="2,4,35,35"/> 
 <parameter name="ChoicelistDash" value="0,0,850,35"/> 
 <parameter name="ChoicelistName" value="45,0,850,35"/>
-<parameter name="ServiceInfoLeft" value="0,0,250,45"/>
-<parameter name="ServiceInfoRight" value="255,0,535,45"/>
+<parameter name="ServiceInfoLeft" value="0,0,280,45"/>
+<parameter name="ServiceInfoRight" value="285,0,535,45"/>
 <parameter name="VirtualKeyboard" value="68,68"/>
 </parameters>
 <windowstyle type="skinned" id= "0">
@@ -2214,8 +2214,8 @@ MultiContentEntryPixmap(pos = (10, 7), size = (60, 40), png = 2),
 <widget name="key_green" position="470,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="PluginDownloadBrowser" position="30,120" size="820,850" title="Plugin browser">
-<widget name="text" position="20,20" size="780,675" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget name="list" position="20,70" size="780,720" font="Regular;28" itemHeight="60" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x60.png" selectionPixmap="MX_HQ9W/menu/button820x60.png" transparent="1"/>
+<widget name="text" position="20,50" size="780,40" font="Regular;28" halign="center" foregroundColor="info" backgroundColor="bgbutton" zPosition="-1" transparent="1"/>
+<widget name="list" position="20,20" size="780,810" font="Regular;30" itemHeight="62" zPosition="3" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x60.png" selectionPixmap="MX_HQ9W/menu/button820x60.png" transparent="1"/>
 </screen>
 <screen name="NimSelection" position="30,120" size="820,850" title="Choose Tuner">
 <widget source="nimlist" render="Listbox" position="0,20" size="820,750" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="#272727" backgroundPixmap="MX_HQ9W/menu/bg820x150.png" selectionPixmap="MX_HQ9W/menu/button820x150.png" transparent="1">
