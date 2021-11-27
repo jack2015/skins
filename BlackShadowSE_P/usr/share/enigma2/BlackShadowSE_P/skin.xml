@@ -6937,7 +6937,7 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
     <widget source="key_yellow" render="Label" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="key_blue" render="Label" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
-  <screen name="VIXBackupManager" position="30,120" size="820,850" title="Backup Manager">
+  <screen name="OpenBhBackupManager" position="30,120" size="820,850" title="Backup Manager">
     <ePixmap pixmap="BlackShadowSE_P/menu/menubutton.png" position="745,780" size="48,48" alphatest="blend" />
     <ePixmap pixmap="BlackShadowSE_P/menu/epg.png" position="745,685" size="48,48" alphatest="blend" />
     <widget name="list" position="10,20" size="800,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
@@ -6951,10 +6951,10 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
     <widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
-  <screen name="VIXBackupManagerLogView" position="30,120" size="820,850" title="LogView">
+  <screen name="OpenBhBackupManagerLogView" position="30,120" size="820,850" title="LogView">
     <widget name="list" position="20,20" size="780,820" font="Regular;28" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
   </screen>
-  <screen name="VIXBackupManagerMenu" position="30,120" size="820,850" title="Setup">
+  <screen name="OpenBhBackupManagerMenu" position="30,120" size="820,850" title="Setup">
     <widget name="config" position="20,20" size="780,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
     <widget name="HelpWindow" position="200,650" zPosition="1" size="1,1" transparent="1" alphatest="blend" />
     <widget name="footnote" position="30,440" size="760,35" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
@@ -6979,7 +6979,7 @@ MultiContentEntryText(pos = (12, 1), size = (1200, 38), font=0, flags = RT_HALIG
     <widget source="key_green" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget source="key_yellow" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
-  <screen name="VIXImageManager" position="30,120" size="820,850" title="ImageManager">
+  <screen name="OpenBhImageManager" position="30,120" size="820,850" title="ImageManager">
     <ePixmap pixmap="BlackShadowSE_P/menu/menubutton.png" position="745,770" size="48,48" alphatest="blend" />
     <widget name="list" position="10,20" size="800,400" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
     <widget name="lab1" position="30,440" size="760,35" font="Regular;30" halign="left" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
@@ -7277,44 +7277,4 @@ MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
 		<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
-	<screen name="OpenBhBackupManager" position="30,120" size="820,850" title="OpenBhBackupManager">
-		<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-		<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-		<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-		<ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-		<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-		<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-		<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-		<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="700,50" size="60,45" alphatest="blend" transparent="1" zPosition="3" />
-		<ePixmap pixmap="skin_default/buttons/key_info.png" position="760,50" size="60,45" alphatest="blend" transparent="1" zPosition="3" />
-		<widget name="lab1" position="20,30" size="700,80" font="Regular; 28" zPosition="2" transparent="0" halign="center"/>
-		<widget name="list" position="20,135" size="780,520" font="Regular;32" scrollbarMode="showOnDemand" />
-		<widget name="backupstatus" position="20,645" size="400,30" font="Regular;28" zPosition="5" />
-		<applet type="onLayoutFinish">
-			self["list"].instance.setItemHeight(35)
-		</applet>
-	</screen>
-	<screen name="OpenBhBackupManagerMenu" position="30,120" size="820,850">
-		<ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-		<ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-		<ePixmap pixmap="BlackShadowSE_P/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-		<ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-		<widget name="key_red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-		<widget name="key_green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-		<widget name="key_yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-		<widget name="key_blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="450,510" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="0,500" zPosition="1" size="35,25" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget name="config" position="25,20" size="768,500" font="Regular;30" transparent="0" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<widget name="footnote" position="20,700" size="700,20" zPosition="1" font="Regular;28" halign="left" transparent="1" valign="top"/>
-		<widget name="description" position="20,550" size="780,32" font="Regular;28" halign="center" valign="top" transparent="0" zPosition="1"/>
-	</screen>
-
-	<screen name="OpenBhBackupManagerLogView" position="30,120" size="820,850">
-		<widget name="list" position="20,20" size="780,650" itemHeight="35" font="Regular;28"/>
-	</screen>
-
 </skin>
