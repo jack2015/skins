@@ -1009,7 +1009,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2, flag
     <widget name="Ilab4" position="30,274" size="640,35" font="Regular;28" zPosition="2" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
     <widget name="Ecmtext" position="30,320" size="790,370" font="Regular;24" halign="left" zPosition="2" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
   </screen>
-  <screen name="DeliteAddons" position="30,120" size="820,850" title="Addons Manager">
+  <screen name="DeliteAddons" position="30,120" size="820,850" title="Feeds and Update Manager">
     <widget source="list" render="Listbox" enableWrapAround="1" position="0,20" size="820,600" zPosition="1" scrollbarMode="showNever" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x60.png" selectionPixmap="BlackShadowSE_P/menu/sel820x60.png" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (80,11), size = (730,40), flags = RT_HALIGN_LEFT, text = 0),
@@ -2674,7 +2674,7 @@ MultiContentEntryText(pos=(210,0), size=(205, 30), text = 2, flags = RT_HALIGN_R
     <widget name="key_red" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="key_green" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
     <widget name="config" position="5,20" size="810,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg820x40.png" selectionPixmap="BlackShadowSE_P/menu/button820x40.png" transparent="1" />
-    <widget name="lab1" position="20,710" size="780,40" zPosition="1" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
+    <widget name="lab1" position="20,650" size="780,80" zPosition="1" font="Regular;30" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1" />
   </screen>
   <screen name="picshow" position="center,200" size="1300,720" title="PicturePlayer">
     <ePixmap pixmap="BlackShadowSE_P/menu/picc.png" position="995,210" size="150,150" zPosition="-1" alphatest="on" />
@@ -3083,10 +3083,12 @@ MultiContentEntryText(pos = (5, 2), size = (810, 36), flags = RT_HALIGN_LEFT|RT_
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="160,780" size="48,48" alphatest="blend" />
-    <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="490,780" size="48,48" alphatest="blend" />
-    <widget source="key_red" render="Label" position="220,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
-    <widget source="key_blue" render="Label" position="550,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/green48x48.png" position="280,780" size="48,48" alphatest="blend" />
+    <ePixmap pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="550,780" size="48,48" alphatest="blend" />
+    <widget source="key_red" render="Label" position="70,770" size="280,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+    <widget source="key_green" render="Label" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+    <widget source="key_blue" render="Label" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
   </screen>
   <screen name="AdapterSetupConfiguration" position="30,120" size="820,850" title="Network Configuration...">
     <widget source="IFtext" render="Label" position="10,30" size="210,35" zPosition="10" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
@@ -7275,6 +7277,91 @@ MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (80, 80), png = 2),
 		<widget name="infolist" position="20,30" size="780,660" font="Regular;28" itemHeight="40" selectionDisabled="1" foregroundColor="button" backgroundColor="bgbutton" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="session.CurrentService" render="Label" position="1309,540" size="531,90" font="Regular;42" halign="center" valign="center" backgroundColor="bgbutton" transparent="1">
 		<convert type="ServiceName">Name</convert>
+		</widget>
+	</screen>
+ <screen name="OscamInfoMenu" position="center,200" size="1300,720" title="">
+    <widget name="mainmenu" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  </screen>
+ <screen name="oscECMInfo" position="center,200" size="1300,720" title="">
+    <widget name="output" position="20,0" size="1260,680" zPosition="2" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+  </screen>
+ <screen name="OscamInfoConfigScreen" position="center,200" size="1300,720" title="">
+    <widget name="config" position="20,0" size="1260,400" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+    <widget name="status" position="20,440" size="1260,260" zPosition="2" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+  </screen>
+<screen name="CCcamInfoMain" position="center,200" size="1300,720" title="">
+    <widget name="menu" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  </screen>
+<screen name="CCcamInfoEcmInfoSelection" position="center,200" size="1300,720" title="">
+    <widget name="list" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  </screen>
+<screen name="CCcamInfoInfoScreen" position="center,200" size="1300,720" title="">
+    <widget name="text" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  </screen>
+<screen name="CCcamInfoSubMenu" position="center,200" size="1300,720" title="">
+    <widget name="list" position="20,0" size="1260,400" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+    <widget name="info" position="20,440" size="1260,260" zPosition="2" font="Regular;30" foregroundColor="blue" backgroundColor="bgbutton" transparent="1" />
+  </screen>
+<screen name="CCcamInfoServerMenu" position="center,200" size="1300,720" title="">
+    <widget name="list" position="20,0" size="1260,400" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+    <widget name="info" position="20,440" size="1260,260" zPosition="2" font="Regular;30" foregroundColor="blue" backgroundColor="bgbutton" transparent="1" />
+  </screen>
+<screen name="CCcamInfoConfigMenu" position="center,200" size="1300,720" title="">
+    <widget name="list" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  </screen>
+<screen name="CCcamInfoRemoteBoxMenu" position="center,200" size="1300,720" title="">
+    <widget name="list" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  </screen>
+<screen name="CCcamInfoShareInfo" position="center,200" size="1300,720" title="">
+    <widget name="list" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  </screen>
+<screen name="CCcamInfoConfigSwitcher" position="center,200" size="1300,720" title="">
+    <widget name="list" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  </screen>
+<screen name="CCcamInfoMenuConfig" position="center,200" size="1300,720" title="">
+    <widget name="list" position="20,0" size="1260,680" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+  </screen>
+<screen name="CCcamShareViewMenu" position="center,200" size="1300,720" title="">
+    <widget name="list" position="20,0" size="1260,400" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="BlackShadowSE_P/menu/bg1260x40.png" selectionPixmap="BlackShadowSE_P/menu/button1260x40.png" transparent="1" />
+ <widget name="uphops" position="20,460" size="1260,40" zPosition="2" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+ <widget name="cards" position="20,460" size="1260,40" zPosition="2" font="Regular;30" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+ <widget name="providers" position="20,500" size="1260,40" zPosition="2" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+ <widget name="reshare" position="20,500" size="1260,40" zPosition="2" font="Regular;30" halign="right" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+ <widget name="title" position="20,660" size="1260,40" zPosition="2" font="Regular;30" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+  </screen>
+  <screen name="CommitInfo" position="30,120" size="820,850" title="CommitInfo">
+    <widget name="AboutScrollLabel" position="20,20" size="780,630" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1" />
+    <widget name="HintText" position="20,650" size="780,100" font="Regular;28" foregroundColor="info" backgroundColor="bgbutton" transparent="1" />
+    <eLabel position="0,755" size="820,3" zPosition="-1" backgroundColor="un272727" />
+   <ePixmap pixmap="BlackShadowSE_P/buttons/red48x48.png" position="385,780" size="48,48" alphatest="blend" />
+    <widget name="key_red" position="445,780" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1" />
+  </screen>
+	<screen name="JobView" position="30,120" size="820,850">
+		<widget source="job_name" render="Label" position="30,10" size="760,40" font="Regular;32"/>
+		<widget source="job_task" render="Label" position="30,60" size="760,40" font="Regular;30"/>
+		<widget source="job_progress" render="Progress" position="30,110" size="760,50" borderWidth="3" backgroundColor="#254f7497"/>
+		<widget source="job_progress" render="Label" position="180,170" size="420,40" font="Regular;32" foregroundColor="button" backgroundColor="bgkey" zPosition="2" halign="center" transparent="1">
+			<convert type="ProgressToText"/>
+		</widget>
+		<widget source="job_status" render="Label" position="30,220" size="760,40" font="Regular;32"/>
+		<widget name="config" position="30,270" size="760,30"/>
+		<widget source="cancelable" render="Pixmap" pixmap="BlackShadowSE_P/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="70,770" size="280,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="Pixmap" pixmap="BlackShadowSE_P/buttons/green48x48.png" position="550,780" size="48,48" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="FixedLabel" text="OK" position="340,770" size="240,70" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="Pixmap" pixmap="BlackShadowSE_P/buttons/blue48x48.png" position="550,780" size="48,48" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="610,770" size="200,70" zPosition="1" font="Regular;28" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1">
+			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
 </skin>
