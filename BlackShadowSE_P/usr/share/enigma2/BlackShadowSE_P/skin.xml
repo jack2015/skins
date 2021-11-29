@@ -954,6 +954,12 @@ skin author: Matrix10
     <widget source="session.CurrentService" render="Label" position="80,261" size="450,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
       <convert type="PliExtraInfo">CryptoBar</convert>
     </widget>
+    <widget source="session.CurrentService" render="Label" position="600,233" size="150,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
+      <convert type="VNetSpeedInfo">RC</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="750,233" size="150,30" halign="left" font="Regular;24" zPosition="4" transparent="1" backgroundColor="bgosd">
+      <convert type="VNetSpeedInfo">TM</convert>
+    </widget>
     <widget source="session.CurrentService" render="Label" position="70,233" size="500,30" halign="left" font="Regular;24" zPosition="12" backgroundColor="bgosd" transparent="1">
       <convert type="BhStreamInfo">StreamUrl</convert>
     </widget>
